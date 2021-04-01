@@ -1,0 +1,710 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+    font-family: "Work Sans", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.defaultBg {
+    background: #f7f9ff;
+}
+
+/* Header Section css */
+.headerSection {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    background: white;
+    box-shadow: 2.5px 4.33px 15px 0 rgba(61, 71, 119, 0.17);
+}
+.headerSection .navbar-nav .nav-item a {
+    transition: .5S;
+    color: black;
+}
+.headerSection .navbar-nav .nav-item a:hover{
+    color: #6278df;
+}
+
+.headerSection .navbar-nav .nav-item a ul li{}
+.headerSection .navbarLogo {
+    font-size: 27px;
+    font-weight: 500;
+    transition: .5s;
+}
+.navbar-brand.navbarLogo:hover {
+    color: #848484;
+}
+.headerSection span {
+    color: white;
+    background: #6278df;
+    height: 42px;
+    display: inline-block;
+    width: 43px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 3px;
+}
+.headerSection .btnNavber {
+    color: #6278df;
+    background: none;
+    padding: 7px 32px;
+    font-size: 17px;
+    border: 2px solid;
+    transition: 0.6s;
+}
+
+/* Header Section Hover */
+.headerSection .btnNavber:hover {
+    background: #6278df;
+    border: 2px solid #6278df;
+    color: #fff;
+    box-shadow: 2.5px 4.33px 15px 0 rgba(64, 87, 191, 0.69);
+}
+
+/* Slider Section css */
+.sliderSection {
+    background: url(./img/mbr-10.jpg) no-repeat center center fixed;
+    padding: 175px 0;
+    position: relative;
+    z-index: 1;
+}
+.sliderSection::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.sliderCaption h4 {
+    font-size: 24px;
+    font-weight: 300;
+}
+.sliderCaption h1 {
+    font-size: 44px;
+    padding: 34px 0;
+}
+.sliderSection input {
+    padding: 16px 0;
+    border: 2px solid #5ba533;
+}
+.sliderSection button {
+    padding: 16px 97px;
+    background-color: #5ba533;
+    color: #ffffff;
+    border: 2px solid transparent;
+    transition: 0.6s;
+}
+
+
+/* Slider Section Hover */
+.sliderSection button:hover {
+    background: #fff;
+    color: #6278df;
+    border: 2px solid #6278df;
+    box-shadow: 2.5px 4.33px 15px 0 rgba(64, 87, 191, 0.69);
+}
+
+.sliderSection input:focus {
+    /* border: 2px solid #6278df; */
+    box-shadow: 3px 3px 27px -3px #6278df;
+}
+
+/* counter section css */
+.counterSection {
+    padding: 100px 0;
+}
+.counterSection .counterText {
+}
+.counterSection .counterText h1 {
+    font-size: 55px;
+}
+.counterSection .counterText p {
+    font-size: 22px;
+}
+
+/* About Section css */
+
+.aboutSection {
+    padding: 73px;
+}
+.aboutSection .aboutText {
+    padding: 81px 0;
+}
+.aboutSection .aboutText h2 {
+    font-size: 41px;
+    margin-bottom: 30px;
+}
+.aboutSection .aboutText p {
+    font-size: 20px;
+}
+.aboutSection .aboutImg {
+}
+.aboutSection .aboutImg img {
+}
+
+/* Feature Section css */
+.featureSection {
+    padding: 100px;
+}
+.featureSection .featureTitle {
+    text-align: center;
+}
+.featureSection .featureTitle h1 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 37px;
+}
+.featureSection .featureTitle h5 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 95px;
+}
+
+.featureSection .featureItem {
+    transition: 0.3s;
+    overflow: hidden;
+    border: none;
+    margin-bottom: 35px;
+    box-shadow: 0 2px 30px -21px;
+    height: 249px;
+}
+.featureSection .featureItem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px 0 0 5px;
+}
+.featureSection .featureItemText {
+    padding: 33px 7px;
+}
+.featureSection .featureItemText h3 {
+    font-size: 22px;
+}
+.featureSection .featureItemText p {
+    font-weight: 300;
+    color: #959191;
+}
+
+/* Feature Hover  */
+.featureSection .featureItem:hover {
+    box-shadow: 0 2px 36px -21px;
+}
+
+/* Protfolio Section css */
+.protfolioSection {
+    padding: 60px 0;
+    text-align: center;
+}
+.protfolioSection .protfolioTitle {
+}
+.protfolioSection .protfolioTitle h1 {
+    font-size: 47px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+
+.protfolioSection .protfolioItem a {
+    margin-bottom: 23px;
+    position: relative;
+    display: block;
+
+}
+
+.protfolioSection .protfolioItem{
+
+}
+.protfolioSection .protfolioItem img {
+}
+
+/* Protfolio Hover  */
+
+.protfolioSection .protfolioItem a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(98, 119, 224, 0.527);
+    transition: 0.6s;
+    opacity: 0;
+    visibility: hidden;
+}
+.protfolioSection .protfolioItem:hover a::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* pricing table section css*/
+.pricingSection {
+    padding: 84px 0;
+}
+.pricingSectionTitle {
+    text-align: center;
+}
+.pricingSectionTitle h1 {
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+.pricingSectionTitle p {
+    font-size: 25px;
+    font-weight: 300;
+}
+.pricingSection .pricingTable {
+    margin-top: 60px;
+    max-width: 100%;
+    padding: 43px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    background: white;
+    border-radius: 6px;
+}
+.pricingSection .pricingTable h2 {
+    font-size: 35px;
+    margin-bottom: 34px;
+}
+.pricingSection .pricingTable h5 {
+}
+
+.pricingSection .pricingTable h5 {
+    font-size: 23px;
+    font-weight: 300;
+    color: #625858;
+    margin-bottom: 47px;
+}
+.pricingSection .tableData {
+}
+.pricingSection .tableData ul {
+    list-style: none;
+    margin-left: -30px;
+}
+.pricingSection .tableData ul li {
+    font-size: 19px;
+    font-weight: 300;
+    color: #686565;
+    line-height: 60px;
+}
+.pricingSection .tableData span {
+    width: 33px;
+    color: #6278df;
+    display: inline-block;
+    font-size: 27px;
+}
+.pricingSection .pricingTable button {
+    transition: 0.6s;
+    color: #6278df;
+    background: white;
+    font-weight: 600;
+    font-size: 19px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    border: none;
+    padding: 15px 41px;
+    margin-bottom: 27px;
+}
+
+.pricingSection .pricingTable {
+    transition: 0.6s;
+}
+/* pricing table Hover section css*/
+.pricingSection .pricingTable:hover {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.247);
+}
+
+.pricingSection .pricingTable:hover button {
+    background: #6278df;
+    color: white;
+}
+.pricingSection .pricingTable button:hover {
+    color: #fff;
+    background: #131313;
+}
+
+/* testimonial section css */
+.testimonialSection {
+    padding: 100px 0;
+    text-align: center;
+}
+.testimonialContent {
+}
+.testimonialContent h5 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 34px;
+}
+.testimonialContent h1 {
+    font-size: 43px;
+}
+.testimonialContent p {
+    font-size: 28px;
+    font-weight: 300;
+    color: #999d9d;
+}
+.testimonialContent span {
+    font-size: 80px;
+    opacity: 15%;
+}
+
+.testimonialSection .testimonialTeam {
+    width: 277px;
+    margin: auto;
+    margin-top: 41px;
+}
+.testimonialSection .testimonialTeam img {
+    width: 66px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 60px;
+}
+.testimonialSection .teamText {
+    text-align: left;
+    padding-top: 10px;
+}
+.testimonialSection .teamText h2 {
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+.testimonialSection .teamText h4 {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Team section css */
+.teamSection {
+    padding: 100px;
+}
+.teamSection .teamSection_TextRight h1 {
+    font-size: 41px;
+}
+.teamSection .teamSection_TextRight p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-top: 42px;
+}
+.teamSection .teamSection_Textleft p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-top: 91px;
+}
+
+.teamSection .teamMember {
+}
+
+.teamSection .teamMemberCard {
+    margin-top: 122px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    border: none;
+
+    transition: 0.6s;
+}
+.teamSection .teamMemberImg {
+}
+.teamSection .teamMemberText {
+    margin-top: -43px;
+    padding: 0 6px;
+}
+.teamSection .teamMemberImg img {
+    width: 134px;
+    position: relative;
+    top: -67px;
+    left: 25px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.37);
+}
+
+.teamSection .teamMember h4 {
+}
+.teamSection .teamMember h5 {
+}
+.teamSection .teamMember p {
+    font-weight: 300;
+    padding: 20px 0;
+}
+.teamSection .teamMember button {
+    color: #1e1e1e;
+    background: white;
+    border: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    transition: 0.6s;
+}
+
+/* Team Hover css */
+.teamSection .teamMemberCard:hover {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.384);
+}
+
+.teamSection .teamMember button:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(39, 39, 39);
+}
+/* Our Contract Section css */
+.contractSection {
+    text-align: center;
+    padding: 100px 0;
+}
+.contractSectionTitle {
+}
+.contractSectionTitle p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.contractSectionTitle h1 {
+    margin-bottom: 106px;
+}
+.contractSectionCard {
+    border: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    padding: 34px;
+}
+.contractSectionCard h4 {
+    font-size: 29px;
+    margin-bottom: 25px;
+}
+.contractSectionCard input {
+    margin-bottom: 17px;
+    padding: 19px 26px;
+    font-size: 22px;
+    box-shadow: 2.5px 4.33px 8px 0 rgba(64, 87, 191, 0.1);
+    font-family: unset;
+    font-weight: 300;
+}
+.contractSectionCard textarea {
+    margin-bottom: 20px;
+}
+.contractSectionCard button {
+    background: #6278df;
+    border: 2px solid transparent;
+    transition: 0.6s;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 12px 23px;
+}
+
+/* Our Contract Hover css */
+.contractSectionCard button:hover {
+    background: white;
+    color: #6278df;
+    border: 2px solid trans;
+}
+/* App Section css */
+.appSection {
+    text-align: center;
+    padding: 100px 0;
+}
+.appSection .appSectionText {
+}
+.appSection .appSectionText p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #959494;
+}
+.appSection .appSectionText h1 {
+    font-size: 39px;
+    padding: 27px 0;
+}
+
+.appSectionBtn {
+}
+.appSectionBtn .buttonRight {
+    transition: 0.6s;
+    padding: 18px 48px;
+    background: #5aa433;
+    border: none;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 38px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(23, 28, 23, 0.38);
+}
+.appSectionBtn .buttonLeft {
+    transition: 0.6s;
+    padding: 18px 48px;
+    background: #ffffff;
+    border: 2px solid #5aa433;
+    color: #5aa433;
+    font-weight: 500;
+    margin-bottom: 38px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(23, 28, 23, 0.38);
+}
+
+.appSectionImg {
+}
+.appSectionImg img {
+}
+
+/* App Section css */
+.appSectionBtn .buttonRight:hover {
+    color: white;
+    background: #000;
+}
+.appSectionBtn .buttonLeft:hover {
+    color: rgb(255, 255, 255);
+    background: #5aa433;
+}
+/* Footer Section */
+.footerSection{}
+.footerSection p{
+    font-size: 23px;
+}
+.footerSection p a {
+    color: rgb(126, 126, 126);
+    transition: .5s;
+    text-decoration: none;
+}
+.footerSection p a:hover{
+    color: #000;
+}
+
+
+
+ /* Responsive css */
+ @media (max-width: 1200px) {
+    .row.sliderCaption {
+        max-width: 100%;
+    }
+    .sliderSection input {
+        margin-bottom: 20px;
+    }
+    .pricingSection .pricingTable h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    .pricingSection .pricingTable h5 {
+        font-size: 21px;
+        margin-bottom: 21px;
+    }
+    .pricingSection .tableData span {
+        width: 28px;
+        font-size: 22px;
+    }
+    .pricingSection .tableData ul li {
+        font-size: 16px;
+        line-height: 53px;
+    }
+ }
+ @media (max-width: 1400px) {
+    .featureSection {
+        padding: 100px 60px;
+    }
+ }
+ @media (max-width: 1200px) {
+    .featureSection {
+        padding: 100px 30px;
+    }
+ }
+ @media (max-width: 1056px) {
+    .featureSection .featureTitle h1 {
+        font-size: 41px;
+
+    }
+ }
+ @media (max-width: 992px) {
+    .featureSection .featureTitle h1 {
+        font-size: 42px;
+    }
+    .featureSection .featureTitle h5 {
+        font-size: 24px;
+    }
+    .aboutSection .aboutText {
+        padding-top: 0;
+    }
+    
+ }
+ @media (max-width: 767px) {
+    .counterSection .counterText h1 {
+        font-size: 40px;
+    }
+    .aboutSection .aboutText h2 {
+        font-size: 28px;
+    }
+    .pricingSectionTitle h1 {
+        font-size: 38px;
+        margin-bottom: 22px;
+    }
+    .pricingSectionTitle p {
+        font-size: 21px;
+    }
+    .testimonialContent h1 {
+        font-size: 34px;
+    }
+    .teamSection {
+        padding: 40px 20px;
+    }
+ }
+ @media (max-width: 747px) {
+    .sliderCaption h1 {
+        font-size: 34px;
+    }
+    .sliderCaption h4 {
+        font-size: 21px;
+        margin-bottom: -19px;
+    }
+ }
+ @media (max-width: 626px) {
+    .aboutSection {
+        padding: 73px 35px;
+    }
+    .aboutSection .aboutText h2 {
+        font-size: 24px;
+    }
+    .featureSection .featureTitle h1 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .pricingSection {
+        padding: 84px 20px;
+    }
+
+ }
+ @media (max-width: 567px) {
+    .teamSection .teamSection_TextRight p {
+        margin-top: 15px;
+    }
+
+ }
+ @media (max-width: 425px) {
+    .pricingSection .pricingTable button {
+        font-size: 16px;
+        width: 100%;
+    }
+    .testimonialContent h1 {
+        font-size: 26px;
+    }
+    .testimonialContent h5 {
+        font-size: 23px;
+        margin-bottom: 4px;
+    }
+    .testimonialContent p {
+        font-size: 25px;
+    }
+
+ }
+ @media (max-width: 375px) {
+    .aboutSection {
+        padding: 73px 20px;
+    }
+    .pricingSection .tableData ul li {
+        font-size: 15px;
+        line-height: 49px;
+    }
+
+ }
